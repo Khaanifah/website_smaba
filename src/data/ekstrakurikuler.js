@@ -1,0 +1,30 @@
+const daftar = [
+  ["Pramuka", "Kegiatan kepramukaan untuk melatih kemandirian, kedisiplinan, dan jiwa kepemimpinan."],
+  ["Paskibra", "Pasukan pengibar bendera yang bertugas pada upacara dan peringatan hari besar nasional."],
+  ["PMR", "Palang Merah Remaja yang melatih pertolongan pertama dan kepedulian sosial."],
+  ["OSIS", "Organisasi siswa yang mewadahi aspirasi dan kegiatan seluruh siswa."],
+  ["Rohis", "Kegiatan keagamaan untuk memperdalam ilmu dan memperkuat akhlak siswa."],
+  ["Basket", "Latihan dan pertandingan bola basket untuk mengasah kerja sama tim dan kebugaran."],
+  ["Voli", "Latihan bola voli untuk meningkatkan kekompakan dan sportivitas."],
+  ["Futsal", "Latihan futsal rutin serta persiapan mengikuti turnamen antarsekolah."],
+  ["Sepak Bola", "Wadah bagi siswa yang gemar sepak bola untuk berlatih dan berkompetisi."],
+  ["Bulu Tangkis", "Latihan bulu tangkis untuk mengembangkan teknik dan prestasi olahraga."],
+  ["Pencak Silat", "Seni bela diri tradisional yang melatih fisik, mental, dan disiplin."],
+  ["Taekwondo", "Latihan bela diri taekwondo untuk membangun ketangkasan dan percaya diri."],
+  ["Paduan Suara", "Kelompok vokal yang tampil pada berbagai acara sekolah."],
+  ["Band", "Wadah bagi siswa yang berminat pada musik modern dan penampilan panggung."],
+  ["Seni Tari", "Latihan tari tradisional dan modern untuk melestarikan budaya."],
+  ["Teater", "Mengasah kemampuan akting, ekspresi, dan penulisan naskah pertunjukan."],
+  ["Jurnalistik", "Belajar menulis berita dan mengelola mading serta media sekolah."],
+  ["Fotografi", "Belajar teknik memotret dan mendokumentasikan kegiatan sekolah."],
+  ["KIR", "Karya Ilmiah Remaja yang melatih penelitian dan penulisan karya ilmiah."],
+  ["Bahasa Inggris", "Klub untuk melatih percakapan, debat, dan lomba berbahasa Inggris."],
+  ["Komputer", "Belajar dasar pemrograman, desain, dan pemanfaatan teknologi informasi."],
+];
+
+export const ekstrakurikuler = daftar.map(([nama, deskripsi], i) => ({
+  id: i + 1,
+  nama,
+  deskripsi,
+  gambar: `/images/ekstrakurikuler/ekskul-${i + 1}.jpg`,
+}));
