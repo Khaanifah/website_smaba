@@ -26,7 +26,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-8 md:flex-row md:px-8">
             <div className="relative h-64 w-64 shrink-0 overflow-hidden rounded-2xl bg-gray-300">
               <Image
-                src="/images/kepala-sekolah.jpg"
+                src="/images/kepala-sekolah.png"
                 alt="Kepala SMA Negeri 1 Bawang"
                 fill
                 sizes="256px"
@@ -38,13 +38,19 @@ export default function Home() {
               <h3 className="text-3xl font-bold">Sudarto, S.Pd., M.M.</h3>
               <p className="font-medium">Kepala SMA Negeri 1 Bawang</p>
               <hr className="my-4 w-full max-w-sm border-ocean-900/40" />
-              <p className="text-justify text-sm leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
+              <p className="mt-4 text-justify text-sm leading-relaxed">
+                Assalamu’alaikum warahmatullahi wabarakatuh.
+              </p>
+              <p className="mt-4 text-justify text-sm leading-relaxed">
+                Selamat datang di website resmi SMA Negeri 1 Bawang.
+                Kami menyambut baik kehadiran website ini sebagai sarana informasi dan komunikasi antara sekolah dengan masyarakat. Melalui website ini, kami berharap pengunjung dapat mengenal lebih dekat profil sekolah, berbagai kegiatan, program pendidikan, serta prestasi yang telah diraih oleh peserta didik.
+              </p>
+              <p className="mt-4 text-justify text-sm leading-relaxed">
+                SMA Negeri 1 Bawang senantiasa berupaya menciptakan lingkungan pendidikan yang mendukung pengembangan potensi, peningkatan prestasi, serta pembentukan karakter peserta didik. Kami percaya bahwa kolaborasi antara sekolah, orang tua, dan masyarakat merupakan bagian penting dalam mewujudkan pendidikan yang berkualitas.
+                Semoga website ini dapat memberikan manfaat dan menjadi jendela informasi yang mempererat hubungan antara SMA Negeri 1 Bawang dengan seluruh masyarakat.
+              </p>
+              <p className="mt-4 text-justify text-sm leading-relaxed">
+                Wassalamu’alaikum warahmatullahi wabarakatuh.
               </p>
             </div>
           </div>

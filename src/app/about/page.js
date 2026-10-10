@@ -11,15 +11,24 @@ export const metadata = {
 
 const judulSection = "text-center text-2xl font-bold text-ocean-900 md:text-3xl";
 
-function KartuList({ judul, items }) {
+function KartuList({ judul, items, bernomor = true }) {
   return (
     <div className="rounded-xl border border-ocean-200 bg-white p-6 shadow-md">
       <h3 className="text-center text-xl font-bold text-ocean-900">{judul}</h3>
-      <ol className="mt-4 list-decimal space-y-1 pl-8 text-sm text-ocean-900">
-        {items.map((teks, i) => (
-          <li key={i}>{teks}</li>
-        ))}
-      </ol>
+
+      {bernomor ? (
+        <ol className="mt-4 list-decimal space-y-1 pl-8 text-sm text-ocean-900">
+          {items.map((teks, i) => (
+            <li key={i}>{teks}</li>
+          ))}
+        </ol>
+      ) : (
+        <div className="mt-4 space-y-2 text-center text-sm text-ocean-900">
+          {items.map((teks, i) => (
+            <p key={i}>{teks}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -55,7 +64,7 @@ export default function AboutPage() {
       <section className="mt-14">
         <h2 className={judulSection}>Visi dan Misi</h2>
         <div className="mx-auto mt-8 grid max-w-4xl gap-6 md:grid-cols-2">
-          <KartuList judul="Visi" items={visi} />
+          <KartuList judul="Visi" items={visi} bernomor={false} />
           <KartuList judul="Misi" items={misi} />
         </div>
       </section>

@@ -10,7 +10,7 @@ const menu = [
 
 export default function Footer() {
   return (
-    <footer className="bg-ocean-900 text-ocean-100">
+    <footer className="bg-ocean-900 text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3">
         {/* Identitas */}
         <div>
@@ -25,7 +25,7 @@ export default function Footer() {
 
         {/* Navigasi */}
         <div>
-          <h3 className="font-semibold text-ocean-200">Menu</h3>
+          <h3 className="font-semibold text-white">Menu</h3>
           <ul className="mt-3 space-y-2 text-sm">
             {menu.map((item) => (
               <li key={item.href}>
@@ -41,16 +41,24 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-white">Kontak</h3>
           <ul className="mt-3 space-y-2 text-sm">
-            <li>Alamat: (isi alamat sekolah), Bawang, Banjarnegara</li>
-            <li>Telepon: (isi nomor telepon)</li>
-            <li>Email: (isi email sekolah)</li>
-          </ul>
+            <li>
+              Alamat:{" "}
+              <a href="https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Bawang+Banjarnegara" target="_blank" rel="noopener noreferrer" className="hover:text-ocean-400 hover:underline">
+                Jl. Campur Salam No.134, Kaliwulung, Bawang, Kec. Bawang, Kab.
+                    Banjarnegara, Jawa Tengah 53471
+                    </a>
+                </li>
+                <li>
+                    Telepon:{" "}
+                    <a>(0286) 5985368</a>
+                </li>
+                <li>
+                    Email:{" "}
+                    <a>info@sman1bawang.sch.id</a>
+                </li>
+            </ul>
+            </div>
         </div>
-      </div>
-
-      <div className="border-t border-ocean-800 py-4 text-center text-xs text-ocean-300">
-        &copy; {new Date().getFullYear()} SMA Negeri 1 Bawang. All rights reserved.
-      </div>
     </footer>
-  );
+    );
 }

@@ -51,7 +51,7 @@ export default async function DetailBeritaPage({ params }) {
       <hr className="mx-0 my-12 border-ocean-900/30 md:mx-4" />
 
       <section className="md:px-4">
-        <h2 className="text-2xl font-bold text-ocean-900 md:text-3xl">Berita Terbaru</h2>
+        <h2 className="text-2xl font-bold text-ocean-900 md:text-3xl">Berita Terkait</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {beritaTerbaru.map((b) => (
             <BeritaTerbaruCard key={b.id} item={b} />
